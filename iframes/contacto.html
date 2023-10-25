@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../estilos.css">
+  </head>
+  <body>
+    <header>
+      <p><h1><img src="../img/grano.gif" alt="icono-grano"> Contacto</h1>
+      <hr>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam alias accusantium et aspernatur libero ullam eum? Possimus veritatis sit sint.
+    </p>
+    <br>
+    </header>
+    <main>
+      <form action="" method="post">
+
+        <label for="nombre"><strong>Nombre*:</strong> </label>
+        <input type="text" name="nombre" id="nombre" autofocus required maxlength="20"><br>
+
+        <label for="apellidos">Apellidos: </label>
+        <input type="text" name="apellidos" id="apellidos" maxlength="20"><br>
+
+        <label for="email"><strong>Correo electrónico*:</strong> </label>
+        <input type="email" name="email" id="email" required maxlength="20"><br>
+
+        Cuántas tazas de café tomas al día?<br>
+        <input type="radio" name="tazas" id="dos" value="1-2" checked>
+        <label for="dos"> 1 o 2 tazas </label>
+        <input type="radio" name="tazas" id="cinco" value="2-5">
+        <label for="cinco"> 2-5 tazas </label>
+        <input type="radio" name="tazas" id="mas5" value="5-">
+        <label for="mas5"> Más de 5 tazas </label><br>
+
+        <label for="preparar">Cómo te gusta preparar el café?</label>
+        <br>
+        <select name="preaparar" id="preparar">
+          <option value="goteo">Cafetera de goteo</option>
+          <option value="francesa">Prensa francesa</option>
+          <option value="espresso">Espresso</option>
+        </select><br>
+
+        <label for="comentario">Comentario:</label>
+        <textarea id="comentario" name="comentario" rows="5" cols="30">
+        </textarea><br>
+
+        <label for="gusto">Qué café te gusta más?</label>
+        <select name="gusto" id="gusto" multiple>
+          <option value="arabica">Arábica</option>
+          <option value="robusta">Robusta</option>
+          <option value="caracolillo">Caracolillo</option>
+        </select><br>
+
+        <label for="encontraste">Cómo nos has encontrado?</label>
+        <input type="text" name="encontraste" id="encontraste" list="sugerencias">
+        <datalist id="sugerencias">
+          <option value="anuncio de television"></option>
+          <option value="buscadores"></option>
+          <option value="un amigo"></option>
+        </datalist><br>
+
+        <label for="edad">Edad: </label>
+        <input type="number" name="edad" id="edad" min="18" max="99"><br>
+
+        <label for="puntua">Cómo puntuarías esta página?:</label><br>
+        <input type="range" name="puntua" id="puntua" min="1" max="10" step="1"><br>
+
+        <label for="color-pag">De qué color preferirías esta página?:</label><br>
+        <input type="color" name="color-pag" id="color-pag"><br>
+        
+
+        <strong>(Los campos con asterisco (*) son obligatorios)</strong>
+
+
+
+        <br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar">
+      
+
+      </form>
+    </main>
+
+  </body>
+</html>
